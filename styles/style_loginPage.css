@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url(./reset.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(210deg, #8360c3, #2ebf91);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card{
+    width: 450px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 4rem;
+    border-radius: 20px;
+    position: relative;
+}
+
+.login-card-logo img{
+        width: 100px;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer{
+    text-align: center;
+}
+
+.login-card a{
+    color:rgb(69, 19, 150);
+    text-decoration: none;
+}
+
+.login-card a:hover{
+    text-decoration: underline;
+}
+
+.login-card a:active{
+    color: rgb(136, 62, 255);
+}
+
+.login-card-header{
+    margin-bottom: 2rem;
+}
+
+.login-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item{
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon{
+    position: absolute;
+    top: 0.82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    color: #747a81;
+    pointer-events: none;
+}
+
+.login-card .form-item .label{
+    position: absolute;
+    left: 50px;
+    top: 14px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #747a81;
+    transition: 0.5s;
+}
+
+.login-card-form .checkbox{
+    color: rgb(69, 19, 150);
+    display:  flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-card-footer{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"]{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1rem 1.5rem;
+    padding-left: 3.5rem;
+    border-radius: 100px;
+    width: 100%;
+}
+
+.login-card input[type="text"]:valid,
+.login-card input[type="password"]:valid,
+.login-card input[type="text"]:focus,
+.login-card input[type="password"]:focus{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.login-card input[type="text"]:valid ~ .label,
+.login-card input[type="password"]:valid ~ .label,
+.login-card input[type="text"]:focus ~ .label,
+.login-card input[type="password"]:focus ~ .label{
+    color: #8360c3;
+    transform: translate(10px, -10px);
+    margin-left: -2rem;
+    top: -6px;
+}
+
+.login-card-form button {
+    background: linear-gradient(to right, #131e42, #1a2f38);
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.2s;
+}
+
+.login-card-form button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.login-card-form button:active{
+    background: linear-gradient(to right, #2287af, #66186e);
+}
+
+.login-card-social{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.login-card-social > div{
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.login-card-social-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.login-card-social-button svg{
+    scale: 1.5;
+}
+
+.login-card-social-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transition: all 0.1s;
+}
+
+.facebook-logo{
+    background-image: linear-gradient(to right, #002bff, #4415d3bf);
+}
+.google-logo{
+    background-image: linear-gradient(to right, #002bff, #4415d3bf);
+}
+.vk-logo{
+    background-image: linear-gradient(to right, #002bff, #4415d3bf);
+}
+
+.login-card-social-button a:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}

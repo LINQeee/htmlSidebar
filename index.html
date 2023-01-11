@@ -6,33 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="images/basket.ico">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link href="style.css" rel="stylesheet">
+        <link href="styles/style_mainPage.css" rel="stylesheet">
        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">-->
     </head>
     <body>
-        <nav class="sidebar">
+            <nav class="sidebar">
             <div class="sidebar-inner">
                 <header class="sidebar-header">
                     <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
                     <i class='bx bx-menu'></i>
                     </button>
-                    <img src="images/_logoLazy.png" alt="" class="sidebar-logo">
+                    <img src="images/logo.png" alt="" class="sidebar-logo">
                 </header>
 
                 <nav class="sidebar-menu">
-                    <button type="button">
+                    <button type="button" onclick="location.href='https://cdn.discordapp.com/attachments/1059937019016511528/1062356934424010792/2022-10-28_164300.png';">
                     <i class='bx bx-home' ></i>
                     <span>Home</span>
                     </button>
-                    <button type="button">
+                    <button type="button" onclick="location.href='https://cdn.discordapp.com/attachments/1059937019016511528/1062356934746980432/2022-12-01_225450.png';">
                     <i class='bx bx-user' ></i>
                     <span>Accounts</span>
                     </button>
-                    <button type="button">
+                    <button type="button" onclick="location.href='https://cdn.discordapp.com/attachments/1059937019016511528/1062356935090909294/2022-10-28_164012.png';">
                     <i class='bx bx-cog' ></i>
                     <span>Settings</span>
                     </button>
-                    <button type="button">
+                    <button type="button" onclick="location.href='https://cdn.discordapp.com/attachments/1059937019016511528/1062356935749419018/photo_2022-10-04_20-43-57.jpg';">
                     <i class='bx bx-data' ></i>
                     <span>Databases</span>
                     </button>
@@ -57,10 +57,17 @@
                     <span>Security</span>
                     </button>
                 </nav>
-
             </div>
         </nav>
-
+        <main style="padding: 10px">
+            <a class="gradient_button" href="loginPage.html">
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+            <span>Click here</span>
+            </a>
+        </main>
         <script type="text/javascript">
             const toggleSidebar = () => document.body.classList.toggle("open");
         </script>
